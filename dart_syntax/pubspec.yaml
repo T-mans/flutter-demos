@@ -1,0 +1,16 @@
+name: dart_syntax
+description: A sample command-line application.
+# version: 1.0.0
+# homepage: https://www.example.com
+# author: qxy9763 <Nannan.Wang@partner.bmw.com>
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+dependencies:
+#  path: ^1.6.0
+  characters: ^0.5.0
+
+dev_dependencies:
+  pedantic: ^1.7.0
+  test: ^1.5.0

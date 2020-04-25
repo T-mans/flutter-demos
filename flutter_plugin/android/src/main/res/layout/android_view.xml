@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray300"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sendEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorYellow"
+        android:hint="please in put text send to flutter"
+        android:text="text send to flutter"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:height="50dp"
+        android:background="@color/colorBlue"
+        android:gravity="center"
+        android:text="发送按钮"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/recieveEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorYellow"
+        android:hint="will receive text from android"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/receiveButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBlue"
+        android:text="接收按钮"
+        android:textSize="12sp" />
+
+</LinearLayout>

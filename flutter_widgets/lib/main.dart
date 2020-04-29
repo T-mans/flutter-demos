@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'bmw_combustion_colors.dart';
-import 'discover_tab.dart';
-import 'm2_text_theme.dart';
-
-final _bmwCombustionPalette = BMWCombustionColors();
+import 'package:flutter_widgets/shopping_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,16 +10,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        accentColor: _bmwCombustionPalette.accent(),
-        accentColorBrightness: Brightness.dark,
-        brightness: Brightness.dark,
-        canvasColor: _bmwCombustionPalette.surface(),
+        accentColorBrightness: Brightness.light,
+        brightness: Brightness.light,
         fontFamily: 'packages/connected_ui/bmw',
-        primaryColor: _bmwCombustionPalette.primary(),
-        scaffoldBackgroundColor: _bmwCombustionPalette.background(),
-        textTheme: m2TextTheme,
       ),
-      home: DiscoverTab(),
+      home: Material(
+        child: ShoppingListItem(
+          product: Product(name: '卫龙辣条'),
+          inCart: true,
+          onCartChanged: (product, inCart) {
+            print('Product:$product inCart:$inCart');
+          },
+        ),
+      ),
     );
   }
 }

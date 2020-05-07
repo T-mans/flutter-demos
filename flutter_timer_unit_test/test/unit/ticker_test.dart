@@ -53,8 +53,16 @@ void main() {
         print('innerGroup tearDownAll');
       });
 
-      test('test for execute order', () {
+      test('test for execute order 1', () {
+        print('test started================');
         expect(1, 1);
+        print('test ended==================');
+      });
+
+      test('test for execute order 2', () {
+        print('test started================');
+        expect(1, 1);
+        print('test ended==================');
       });
     });
   });

@@ -600,6 +600,13 @@ void getAnnotation() {
 
 另外这里有[flutter官方github](https://github.com/flutter),可以看到很多官方的团队的风格。
 
+### Dart大版本更新重点
+- Dart 2.5 机器学习(ML)驱动的代码补全和 dart:ffi外部函数接口，用于直接从 Dart调用C代码
+- Dart 2.6 DartToNative编译，和dart:ffi的改进
+- Dart 2.7 扩展方法支持，特殊字符串处理包：characters，Null安全预览版
+- Dart 2.8 新增pub outdated命令，Null安全预备改动
+
+
 
 
 
